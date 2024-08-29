@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[a4paper, top= 0.5cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue, 
+}
+
+\title{Сравнение по модулю}
+
+\begin{document}
+\maketitle
+    \subsection*{Определения} Целое число a делится на число b с \textbf{остатком} $r$ $(r < b)$, если существует целое число c такое, что $a = b \cdot c + r$. \\ \\
+    Если a и b имеют одинаковые остатки при делении на n, то они \textbf{сравнимы по модулю n.} \\
+    \begin{center}
+        $a \equiv b \ (mod \ n)$
+    \end{center} \\
+    Будем говорить, что числа $a_1, a_2, . . . a_n$ образуют \textbf{полную систему остатков по модулю n}, если никакие два числа не сравнимы по модулю
+    n. Чаще всего в качестве полной системы остатков выбирается множество
+    \{0, 1, 2, ...,n − 1\} или множество \{1, 2, ...,n\}.
+    \subsection*{Упражнения} 
+    \begin{enumerate}
+        \item Если $a \equiv b \ (mod \ z)$, то
+        \begin{enumerate}
+            \item $a + c \equiv b + c \ (mod \ z)$
+            \item $ac \equiv bc \ (mod \ z)$
+            \item $a^k \equiv b^k \ (mod \ z)$
+        \end{enumerate}
+        \item Если $a \equiv b \ (mod \ z)$ и $b \equiv c \ (mod \ z)$, то  $a \equiv c \ (mod \ z)$
+        \item Если $a \equiv b \ (mod \ z)$ и $c \equiv d \ (mod \ z)$, то  $a + c \equiv b + d \ (mod \ z)$
+        \item Если $a \equiv b \ (mod \ z)$ и $c \equiv d \ (mod \ z)$, то  $ac \equiv bd \ (mod \ z)$
+    \end{enumerate}
+    % \subsection*{Ещё немного определений}  Будем говорить, что числа $a_1, a_2, . . . a_n$ образуют полную систему остатков по модулю n, если никакие два числа не сравнимы по модулю
+    % n. Чаще всего в качестве полной системы остатков выбирается множество
+    % \{0, 1, 2, ...,n − 1\} или множество \{1, 2, ...,n\}.
+    \subsection*{Задачи}
+    \begin{enumerate}
+        \item 
+        \begin{enumerate}
+            \item Найдите остаток от деления $71 * 72 * 73 * 74$ на 70
+            \item Найдите остаток от деления $71 * 72 * 73 * 74$ на 75
+            \item Найдите остаток от деления $71^{2024}$ на 70
+        \end{enumerate}
+    \item Докажите, что если $3x + 7y \equiv 1 (mod \ 11)$, то $3x + 40y \equiv 1 (mod \ 11)$
+    \item  Можно ли доску размером 5×5 заполнить доминошками размером 1×2?
+    \item Пусть m и n $-$ целые, но не обязательно чётные числа. Докажите, что  $mn(m + n)$  – чётное число.
+    \item
+        \begin{enumerate}
+            \item Докажите, что $n(n-1)$ - чётное число, если n - целое.
+            \item Может ли произведение двух подрядыдущих чисел быть простым числом, большим 2? А равным 2?
+        \end{enumerate}
+    \item Докажите признак делимости на 3. Число делится на 3, если сумма его цифр делится на 3.
+    \end{enumerate}
+\end{document}

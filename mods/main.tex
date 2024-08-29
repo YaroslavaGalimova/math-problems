@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+
+\title{Сравнения по модулю}
+
+\begin{document}
+
+\maketitle
+
+\section*{Шпаргалка по теории}
+    \subsubsection*{Определение}
+    Целые числа a и b сравнимы по модулю натурального числа n (то есть $a \equiv b \ (mod \ z)$), если они дают одинаковый остаток при делении на n. Или если их разность делится на n. Эти определения равносильны и мы уже это доказывали :)
+    \subsubsection*{Свойства сравнений}
+    \begin{enumerate}
+        \item Если $a \equiv b \ (mod \ z)$, то
+        \begin{enumerate}
+            \item $a + c \equiv b + c \ (mod \ z)$
+            \item $ac \equiv bc \ (mod \ z)$
+            \item $a^k \equiv b^k \ (mod \ z)$
+        \end{enumerate}
+        \item Если $a \equiv b \ (mod \ z)$ и $b \equiv c \ (mod \ z)$, то  $a \equiv c \ (mod \ z)$
+        \item Если $a \equiv b \ (mod \ z)$ и $c \equiv d \ (mod \ z)$, то  $a + c \equiv b + d \ (mod \ z)$
+        \item Если $a \equiv b \ (mod \ z)$ и $c \equiv d \ (mod \ z)$, то  $ac \equiv bd \ (mod \ z)$
+    \end{enumerate}
+
+\section*{Задачи}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item  \underline{Упражнения:} 
+    \begin{enumerate}
+        \item Найдите остаток от деления $71 * 72 * 73 * 74$ на 70
+        \item Найдите остаток от деления $71 * 72 * 73 * 74$ на 75
+        \item Найдите остаток от деления $71^{2024}$ на 70
+    \end{enumerate}
+    \item Докажите, что если $3x + 7y \equiv 1 (mod \ 11)$, то $3x + 40y \equiv 1 (mod \ 11)$
+    \item Докажите признак делимости на 3. Число делится на 3, если сумма его цифр делится на 3.
+\end{enumerate}
+
+\end{document}
